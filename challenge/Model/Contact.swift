@@ -13,7 +13,7 @@ class Contact {
     let id: String!
     let name: String!
     let companyName: String?
-    let isFavorite: Bool?
+    let isFavorite: Bool!
     let smallImageURL: String?
     let largeImageURL: String?
     var smallImage: UIImage!
@@ -27,7 +27,7 @@ class Contact {
         self.id = data["id"] as? String ?? ""
         self.name = data["name"] as? String ?? ""
         self.companyName = data["companyName"] as? String
-        self.isFavorite = data["isFavorite"] as? Bool
+        self.isFavorite = data["isFavorite"] as? Bool ?? false
         self.smallImageURL = data["smallImageURL"] as? String
         self.largeImageURL = data["largeImageURL"] as? String
         self.email = data["emailAddress"] as? String

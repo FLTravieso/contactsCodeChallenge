@@ -20,6 +20,8 @@
 		8417045921783D2200089346 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417045821783D2200089346 /* Phone.swift */; };
 		8417045B21783D3200089346 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417045A21783D3200089346 /* Address.swift */; };
 		845CAA24217855C90008AD65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CAA23217855C90008AD65 /* Constants.swift */; };
+		845CAA28217863640008AD65 /* ContactDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845CAA27217863640008AD65 /* ContactDetail.storyboard */; };
+		845CAA2B2178638D0008AD65 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CAA2A2178638D0008AD65 /* ContactDetailViewController.swift */; };
 		F8C91BDA587FD542CE23F6E4 /* Pods_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D897211DC141576EAD3E3DD /* Pods_challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		8417045821783D2200089346 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		8417045A21783D3200089346 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		845CAA23217855C90008AD65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		845CAA27217863640008AD65 /* ContactDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactDetail.storyboard; sourceTree = "<group>"; };
+		845CAA2A2178638D0008AD65 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		85FDC1E15D003A17C4F9DE5E /* Pods-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-challenge/Pods-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,8 @@
 		8417044A2177D15F00089346 /* ContactDetail */ = {
 			isa = PBXGroup;
 			children = (
+				845CAA262178634F0008AD65 /* View */,
+				845CAA25217863450008AD65 /* Presenter */,
 			);
 			path = ContactDetail;
 			sourceTree = "<group>";
@@ -166,6 +172,30 @@
 				845CAA23217855C90008AD65 /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		845CAA25217863450008AD65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		845CAA262178634F0008AD65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				845CAA29217863710008AD65 /* Cells */,
+				845CAA27217863640008AD65 /* ContactDetail.storyboard */,
+				845CAA2A2178638D0008AD65 /* ContactDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		845CAA29217863710008AD65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C6693F833AD05F6A6737E52F /* Frameworks */ = {
@@ -237,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8417044F2177D6E100089346 /* ContactCellView.xib in Resources */,
+				845CAA28217863640008AD65 /* ContactDetail.storyboard in Resources */,
 				8417043E2177C64C00089346 /* LaunchScreen.storyboard in Resources */,
 				8417043B2177C64C00089346 /* Assets.xcassets in Resources */,
 				841704392177C64A00089346 /* ContactsList.storyboard in Resources */,
@@ -295,6 +326,7 @@
 				841704532177DEC400089346 /* ContactsListPresenter.swift in Sources */,
 				8417045921783D2200089346 /* Phone.swift in Sources */,
 				841704342177C64900089346 /* AppDelegate.swift in Sources */,
+				845CAA2B2178638D0008AD65 /* ContactDetailViewController.swift in Sources */,
 				8417045B21783D3200089346 /* Address.swift in Sources */,
 				841704512177D71500089346 /* ContactCellView.swift in Sources */,
 				845CAA24217855C90008AD65 /* Constants.swift in Sources */,

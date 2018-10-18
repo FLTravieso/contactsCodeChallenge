@@ -95,6 +95,20 @@ class ContactsListPresenter {
         cell.contactImage.image = self.otherContacts[row].smallImage
     }
 
+    func didSelect(_ index: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "ContactDetail", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "ContactDetailViewController") as! ContactDetailViewController
+        switch index.section {
+        case 0:
+            controller.contact = self.favoritesContacts[index.row]
+        case 1:
+            controller.contact = self.otherContacts[index.row]
+        default:
+            break
+        }
+        self.contactsListView.navigationController?.pushViewController(controller, animated: true)
+    }
+
     func getImage(_ iconURL: String?) -> UIImage {
         if let contactImage = iconURL,
             let imageURL = URL(string: contactImage),
