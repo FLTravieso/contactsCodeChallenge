@@ -36,9 +36,14 @@ class ContactDetailViewController: UIViewController {
 
     func setupTableView() {
         self.contactInfo.dataSource = self
-        let bundle = Bundle(for: HeaderCell.self)
-        let nibFile = UINib(nibName: "HeaderCell", bundle: bundle)
+        self.contactInfo.tableFooterView = UIView()
+        self.contactInfo.allowsSelection = false
+        var bundle = Bundle(for: HeaderCell.self)
+        var nibFile = UINib(nibName: "HeaderCell", bundle: bundle)
         contactInfo.register(nibFile, forCellReuseIdentifier: "HeaderCell")
+        bundle = Bundle(for: CustomCell.self)
+        nibFile = UINib(nibName: "CustomCell", bundle: bundle)
+        contactInfo.register(nibFile, forCellReuseIdentifier: "CustomCell")
     }
 }
 
