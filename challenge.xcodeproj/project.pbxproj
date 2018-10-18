@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		841704342177C64900089346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704332177C64900089346 /* AppDelegate.swift */; };
-		841704362177C64A00089346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704352177C64A00089346 /* ViewController.swift */; };
-		841704392177C64A00089346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841704372177C64A00089346 /* Main.storyboard */; };
+		841704362177C64A00089346 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704352177C64A00089346 /* ContactsListViewController.swift */; };
+		841704392177C64A00089346 /* ContactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841704372177C64A00089346 /* ContactsList.storyboard */; };
 		8417043B2177C64C00089346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8417043A2177C64C00089346 /* Assets.xcassets */; };
 		8417043E2177C64C00089346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417043C2177C64C00089346 /* LaunchScreen.storyboard */; };
+		8417044F2177D6E100089346 /* ContactCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8417044E2177D6E100089346 /* ContactCellView.xib */; };
+		841704512177D71500089346 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704502177D71500089346 /* ContactCellView.swift */; };
+		841704532177DEC400089346 /* ContactsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704522177DEC400089346 /* ContactsListPresenter.swift */; };
+		841704552177E32B00089346 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841704542177E32B00089346 /* RequestManager.swift */; };
+		8417045721783B5700089346 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417045621783B5700089346 /* Contact.swift */; };
+		8417045921783D2200089346 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417045821783D2200089346 /* Phone.swift */; };
+		8417045B21783D3200089346 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417045A21783D3200089346 /* Address.swift */; };
+		845CAA24217855C90008AD65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CAA23217855C90008AD65 /* Constants.swift */; };
+		F8C91BDA587FD542CE23F6E4 /* Pods_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D897211DC141576EAD3E3DD /* Pods_challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D897211DC141576EAD3E3DD /* Pods_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DA5FB68720BEB6566662D1 /* Pods-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-challenge/Pods-challenge.release.xcconfig"; sourceTree = "<group>"; };
 		841704302177C64900089346 /* challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841704332177C64900089346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		841704352177C64A00089346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		841704382177C64A00089346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841704352177C64A00089346 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		841704382177C64A00089346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ContactsList.storyboard; sourceTree = "<group>"; };
 		8417043A2177C64C00089346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8417043D2177C64C00089346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8417043F2177C64C00089346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8417044E2177D6E100089346 /* ContactCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCellView.xib; sourceTree = "<group>"; };
+		841704502177D71500089346 /* ContactCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		841704522177DEC400089346 /* ContactsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListPresenter.swift; sourceTree = "<group>"; };
+		841704542177E32B00089346 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		8417045621783B5700089346 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8417045821783D2200089346 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		8417045A21783D3200089346 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		845CAA23217855C90008AD65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85FDC1E15D003A17C4F9DE5E /* Pods-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-challenge/Pods-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C91BDA587FD542CE23F6E4 /* Pods_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1A76D622DFE779A2ED800C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85FDC1E15D003A17C4F9DE5E /* Pods-challenge.debug.xcconfig */,
+				47DA5FB68720BEB6566662D1 /* Pods-challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		841704272177C64900089346 = {
 			isa = PBXGroup;
 			children = (
 				841704322177C64900089346 /* challenge */,
 				841704312177C64900089346 /* Products */,
+				0A1A76D622DFE779A2ED800C /* Pods */,
+				C6693F833AD05F6A6737E52F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,94 @@
 		841704322177C64900089346 /* challenge */ = {
 			isa = PBXGroup;
 			children = (
+				845CAA22217855B60008AD65 /* Common */,
+				841704482177CBAD00089346 /* WebAPIServices */,
 				841704332177C64900089346 /* AppDelegate.swift */,
-				841704352177C64A00089346 /* ViewController.swift */,
-				841704372177C64A00089346 /* Main.storyboard */,
+				841704452177C66600089346 /* Model */,
+				8417044A2177D15F00089346 /* ContactDetail */,
+				841704492177D14E00089346 /* ContactsList */,
 				8417043A2177C64C00089346 /* Assets.xcassets */,
 				8417043C2177C64C00089346 /* LaunchScreen.storyboard */,
 				8417043F2177C64C00089346 /* Info.plist */,
 			);
 			path = challenge;
+			sourceTree = "<group>";
+		};
+		841704452177C66600089346 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8417045621783B5700089346 /* Contact.swift */,
+				8417045821783D2200089346 /* Phone.swift */,
+				8417045A21783D3200089346 /* Address.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841704482177CBAD00089346 /* WebAPIServices */ = {
+			isa = PBXGroup;
+			children = (
+				841704542177E32B00089346 /* RequestManager.swift */,
+			);
+			path = WebAPIServices;
+			sourceTree = "<group>";
+		};
+		841704492177D14E00089346 /* ContactsList */ = {
+			isa = PBXGroup;
+			children = (
+				8417044C2177D19300089346 /* Presenter */,
+				8417044B2177D18700089346 /* View */,
+			);
+			path = ContactsList;
+			sourceTree = "<group>";
+		};
+		8417044A2177D15F00089346 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		8417044B2177D18700089346 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8417044D2177D5AC00089346 /* Cells */,
+				841704372177C64A00089346 /* ContactsList.storyboard */,
+				841704352177C64A00089346 /* ContactsListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8417044C2177D19300089346 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				841704522177DEC400089346 /* ContactsListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8417044D2177D5AC00089346 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8417044E2177D6E100089346 /* ContactCellView.xib */,
+				841704502177D71500089346 /* ContactCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		845CAA22217855B60008AD65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				845CAA23217855C90008AD65 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C6693F833AD05F6A6737E52F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D897211DC141576EAD3E3DD /* Pods_challenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841704422177C64C00089346 /* Build configuration list for PBXNativeTarget "challenge" */;
 			buildPhases = (
+				1839CB8E7D23B8C835C14825 /* [CP] Check Pods Manifest.lock */,
 				8417042C2177C64900089346 /* Sources */,
 				8417042D2177C64900089346 /* Frameworks */,
 				8417042E2177C64900089346 /* Resources */,
+				02AB3513CA3AF28E49BC3AC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,33 +236,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417044F2177D6E100089346 /* ContactCellView.xib in Resources */,
 				8417043E2177C64C00089346 /* LaunchScreen.storyboard in Resources */,
 				8417043B2177C64C00089346 /* Assets.xcassets in Resources */,
-				841704392177C64A00089346 /* Main.storyboard in Resources */,
+				841704392177C64A00089346 /* ContactsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02AB3513CA3AF28E49BC3AC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-challenge/Pods-challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-challenge/Pods-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1839CB8E7D23B8C835C14825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8417042C2177C64900089346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841704362177C64A00089346 /* ViewController.swift in Sources */,
+				8417045721783B5700089346 /* Contact.swift in Sources */,
+				841704552177E32B00089346 /* RequestManager.swift in Sources */,
+				841704362177C64A00089346 /* ContactsListViewController.swift in Sources */,
+				841704532177DEC400089346 /* ContactsListPresenter.swift in Sources */,
+				8417045921783D2200089346 /* Phone.swift in Sources */,
 				841704342177C64900089346 /* AppDelegate.swift in Sources */,
+				8417045B21783D3200089346 /* Address.swift in Sources */,
+				841704512177D71500089346 /* ContactCellView.swift in Sources */,
+				845CAA24217855C90008AD65 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		841704372177C64A00089346 /* Main.storyboard */ = {
+		841704372177C64A00089346 /* ContactsList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				841704382177C64A00089346 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ContactsList.storyboard;
 			sourceTree = "<group>";
 		};
 		8417043C2177C64C00089346 /* LaunchScreen.storyboard */ = {
@@ -278,6 +439,7 @@
 		};
 		841704432177C64C00089346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FDC1E15D003A17C4F9DE5E /* Pods-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +458,7 @@
 		};
 		841704442177C64C00089346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DA5FB68720BEB6566662D1 /* Pods-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

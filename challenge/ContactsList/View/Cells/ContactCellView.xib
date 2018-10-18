@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCellView" rowHeight="126" id="Rfd-td-9ms" customClass="ContactCellView" customModule="challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rfd-td-9ms" id="vCh-Ht-4CJ">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserIconSmall" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-yT-kth">
+                        <rect key="frame" x="28" y="27" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="3Ad-hF-hNW"/>
+                            <constraint firstAttribute="width" secondItem="2yP-yT-kth" secondAttribute="height" multiplier="1:1" id="EmP-xq-DzW"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-D1-Jk4">
+                        <rect key="frame" x="116" y="40" width="280" height="45.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiO-Kq-gTH">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="21.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkz-DU-gG1">
+                                <rect key="frame" x="0.0" y="29.5" width="280" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e6z-D1-Jk4" firstAttribute="leading" secondItem="2yP-yT-kth" secondAttribute="trailing" constant="16" id="4bY-qS-doi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e6z-D1-Jk4" secondAttribute="trailing" constant="16" id="Mkv-Rh-lDN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2yP-yT-kth" secondAttribute="bottom" constant="16" id="QOt-VZ-wyE"/>
+                    <constraint firstItem="2yP-yT-kth" firstAttribute="leading" secondItem="vCh-Ht-4CJ" secondAttribute="leadingMargin" constant="8" id="V2M-ll-WoG"/>
+                    <constraint firstItem="2yP-yT-kth" firstAttribute="top" secondItem="vCh-Ht-4CJ" secondAttribute="topMargin" constant="16" id="bIt-xS-xB2"/>
+                    <constraint firstItem="e6z-D1-Jk4" firstAttribute="centerY" secondItem="vCh-Ht-4CJ" secondAttribute="centerY" id="hbX-0y-TBc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="company" destination="Rkz-DU-gG1" id="rrS-8Z-OXn"/>
+                <outlet property="contactImage" destination="2yP-yT-kth" id="yTb-hu-Q4e"/>
+                <outlet property="name" destination="GiO-Kq-gTH" id="pRx-mF-H4e"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-275"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UserIconSmall" width="60" height="60"/>
+    </resources>
+</document>
