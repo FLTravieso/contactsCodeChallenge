@@ -37,25 +37,13 @@
                             <color key="tintColor" red="0.19683851199999999" green="0.91878265140000004" blue="0.62609823850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contactInfo" destination="DxB-fj-dFY" id="dTd-V0-oTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZY-L2-pco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="145.27736131934034"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="D3o-zr-VVh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NTs-Q4-MOD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atu-Sh-Bjz">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5bc-lV-tY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-431.19999999999999" y="145.27736131934034"/>
         </scene>
     </scenes>
 </document>
