@@ -23,6 +23,13 @@ class ContactsListPresenter {
     func start() {
         self.contactsListView.showLoading()
         loadContacts()
+        NotificationCenter.default.addObserver(self, selector: #selector(favButtonPressed),
+                                               name: NSNotification.Name(rawValue: "favButtonPressed"),
+                                               object: nil)
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
     func loadContacts() {
@@ -121,5 +128,23 @@ class ContactsListPresenter {
             return UIImage()
         }
         return placeholderImage
+    }
+
+    @objc func favButtonPressed(notification: NSNotification) {
+        if let id = notification.userInfo?["id"] as? String {
+            self.contacts = contacts.map {
+                if $0.id == id {
+                    $0.isFavorite = !$0.isFavorite
+                }
+                return $0
+            }
+            self.favoritesContacts = self.contacts.filter {
+                $0.isFavorite == true
+            }
+            self.otherContacts = self.contacts.filter {
+                $0.isFavorite == false
+            }
+            self.contactsListView.contactsList.reloadData()
+        }
     }
 }

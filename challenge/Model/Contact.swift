@@ -13,7 +13,7 @@ class Contact {
     let id: String!
     let name: String!
     let companyName: String?
-    let isFavorite: Bool!
+    var isFavorite: Bool!
     let smallImageURL: String?
     let largeImageURL: String?
     var smallImage: UIImage!

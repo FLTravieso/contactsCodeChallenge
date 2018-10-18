@@ -26,12 +26,17 @@ class ContactDetailViewController: UIViewController {
 
     func setupNavBar() {
         let buttonImage = contact.isFavorite ? UIImage(named: "FavoriteTrue")?.withRenderingMode(.alwaysOriginal) : UIImage(named: "FavoriteFalse")?.withRenderingMode(.alwaysOriginal)
-        let favorite = UIBarButtonItem(image: buttonImage, style: .plain, target: self, action: nil)
+        let favorite = UIBarButtonItem(image: buttonImage, style: .plain, target: self, action: #selector(favButtonPressed))
         self.navigationItem.rightBarButtonItem = favorite
     }
 
-    func setFavoriteButton( isFavorite: Bool) {
-        
+    @objc func favButtonPressed() {
+        guard let item = self.navigationItem.rightBarButtonItem else {
+            return
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "favButtonPressed"),
+                                        object: nil, userInfo: ["id": contact.id])
+        item.image = contact.isFavorite ? UIImage(named: "FavoriteTrue")?.withRenderingMode(.alwaysOriginal) : UIImage(named: "FavoriteFalse")?.withRenderingMode(.alwaysOriginal)
     }
 
     func setupTableView() {
